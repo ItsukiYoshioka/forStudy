@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C5437B3285D5B8000352180 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5437B2285D5B8000352180 /* ViewModel.swift */; };
+		0C5437B3285D5B8000352180 /* Girl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5437B2285D5B8000352180 /* Girl.swift */; };
+		0C565A4D285EBFD200A1D90E /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C565A4C285EBFD200A1D90E /* Button.swift */; };
 		0CEC8A8A285A22D000BEBE1B /* TestGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC8A89285A22D000BEBE1B /* TestGameApp.swift */; };
 		0CEC8A8C285A22D000BEBE1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC8A8B285A22D000BEBE1B /* ContentView.swift */; };
 		0CEC8A8E285A22D400BEBE1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CEC8A8D285A22D400BEBE1B /* Assets.xcassets */; };
@@ -16,7 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C5437B2285D5B8000352180 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		0C5437B2285D5B8000352180 /* Girl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Girl.swift; sourceTree = "<group>"; };
+		0C565A4C285EBFD200A1D90E /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		0CEC8A86285A22D000BEBE1B /* TestGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CEC8A89285A22D000BEBE1B /* TestGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGameApp.swift; sourceTree = "<group>"; };
 		0CEC8A8B285A22D000BEBE1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,7 +60,8 @@
 				0CEC8A89285A22D000BEBE1B /* TestGameApp.swift */,
 				0CEC8A8B285A22D000BEBE1B /* ContentView.swift */,
 				0CEC8A97285A230A00BEBE1B /* GameScene.swift */,
-				0C5437B2285D5B8000352180 /* ViewModel.swift */,
+				0C5437B2285D5B8000352180 /* Girl.swift */,
+				0C565A4C285EBFD200A1D90E /* Button.swift */,
 				0CEC8A8D285A22D400BEBE1B /* Assets.xcassets */,
 				0CEC8A8F285A22D400BEBE1B /* Preview Content */,
 			);
@@ -143,10 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C565A4D285EBFD200A1D90E /* Button.swift in Sources */,
 				0CEC8A98285A230A00BEBE1B /* GameScene.swift in Sources */,
 				0CEC8A8C285A22D000BEBE1B /* ContentView.swift in Sources */,
 				0CEC8A8A285A22D000BEBE1B /* TestGameApp.swift in Sources */,
-				0C5437B3285D5B8000352180 /* ViewModel.swift in Sources */,
+				0C5437B3285D5B8000352180 /* Girl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
