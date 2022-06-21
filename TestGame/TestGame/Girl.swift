@@ -17,6 +17,7 @@ class Girl: SKSpriteNode{
     
     private var _currentFace: facialExpression
     private var timer: Timer!
+    private var faceChangeSpeed: Double
     
     var currentFace: facialExpression{
         self._currentFace
@@ -24,6 +25,7 @@ class Girl: SKSpriteNode{
     
     init(){
         self._currentFace = .smiling
+        self.faceChangeSpeed = 0.5
         let firstFace = SKTexture(imageNamed: facialExpression.smiling.rawValue)
         super.init(texture: firstFace, color: UIColor(), size: firstFace.size())
         
@@ -36,6 +38,7 @@ class Girl: SKSpriteNode{
 }
 
 extension Girl{
+    //ルーレットの具体的処理。この関数を連続的に呼び出すことでルーレットを実現
     @objc private func changeFace(){
         switch _currentFace{
         case .smiling:
@@ -49,14 +52,21 @@ extension Girl{
         self.texture = SKTexture(imageNamed: self._currentFace.rawValue)
     }
     
+    //ルーレットを開始する処理
     func startChangeFace(){
-        self.timer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(self.changeFace), userInfo: nil, repeats: true)
+        self.timer = Timer.scheduledTimer(timeInterval: self.faceChangeSpeed, target: self, selector: #selector(self.changeFace), userInfo: nil, repeats: true)
     }
     
+    //ルーレットを止める処理
     func stopChangeFace(){
         if self.timer == nil{
             return
         }
         self.timer.invalidate()
+    }
+    
+    //ルーレットの速度を変更する処理
+    func changeFaceChangeSpeed(speed: Double){
+        self.faceChangeSpeed = speed
     }
 }
